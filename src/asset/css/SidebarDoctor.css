@@ -1,0 +1,53 @@
+
+.sidebar {
+width: 200px;
+background-color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.sidebar-logo {
+    margin: 10px 0;
+}
+.sidebar-logo img{
+    width: 30%;
+    margin-left: 20px;
+}
+.sidebar-links {
+list-style: none;
+padding: 0;
+ margin-right: 30px;
+}
+.sidebar-links li {
+margin: 30px 0;
+}
+.sidebar-links a {
+color: darkslategrey;
+text-decoration: none;
+font-size: 13px;
+}
+.sidebar-links li:hover{
+    color: blue;
+}
+.sidebar-links a:hover{
+    color: blue;
+}
+.spacer{
+    list-style: none;
+    padding: 0;
+    margin-right: 20px;
+}
+.spacer li{
+    margin: 30px 0;
+}
+.spacer li a{
+    color: darkslategrey;
+    text-decoration: none;
+    font-size: 13px;
+}
+.spacer li:hover{
+    color: blue;
+}
+.spacer a:hover{
+    color: blue;
+}

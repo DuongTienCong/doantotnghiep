@@ -1,0 +1,154 @@
+.doctor{
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.header-doctor {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.header-doctor input {
+  width: 550px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  margin-right: 400px;
+}
+.card{
+  display: flex;
+  align-items: center;
+}
+
+.card-blood, .card-heart-rate, .card-total-appointments {
+  width: 150px;
+  height: 200px;
+  margin: 0 50px; /* Điều chỉnh khoảng cách giữa các thẻ */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  margin-right: 5px;
+}
+
+.card-blood:hover, .card-heart-rate:hover, .card-total-appointments:hover {
+  background-color: #007bff;
+}
+
+.card-blood .icon-doctor, .card-heart-rate .icon-doctor, .card-total-appointments .icon-doctor {
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.card-blood .icon-doctor {
+  color: red;
+}
+
+.card-heart-rate .icon-doctor {
+  color: red;
+}
+
+.card-total-appointments .icon-doctor {
+  color: orange;
+}
+
+.card-blood .info-doctor h3, .card-heart-rate .info-doctor h3, .card-total-appointments .info-doctor h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.card-blood .info-doctor p, .card-heart-rate .info-doctor p, .card-total-appointments .info-doctor p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.dashboard-doctor {
+  display: flex;
+  justify-content: flex-start; /* Chỉnh căn chỉnh về phía trái */
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.icon-doctor {
+  font-size: 30px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.info-doctor h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.info-doctor p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.chart-section {
+  width: 100%;
+  margin-bottom: 20px;
+}
+  
+.chart-section h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+  
+.chart-section img {
+  width: 70%;
+  height: 360px;
+  display: block;
+  border-radius: 10px;
+  margin-left: 20px;
+  align-items: center;
+}
+  
+
+.history-section {
+  width: 100%;
+}
+  
+.history-section h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+  
+.history-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+  
+.history-section li {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.history-section li::before {
+  content: '•';
+  color: green;
+  margin-right: 10px;
+}
+  

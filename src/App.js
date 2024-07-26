@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router , Route , Routes } from 'react-router-dom';
 import './App.css';
+import Footer from './Component/Home/Footer';
+import Header from './Component/Home/Header';
+import Main from './Component/Home/Main';
+import DangNhap from './Component/Login/DangNhap'
+import SidebarDoctor from './Component/Doctor/SidebarDoctor';
+import InformationPatient from './Component/Doctor/InformationPatient';
+import HeaderDoctor from './Component/Doctor/HeaderDoctor';
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* <Router>
+      <Header></Header>
+       <Routes>
+          <Route path='/' element={<Main></Main>}></Route>
+          <Route path='Login' element={<DangNhap></DangNhap>}></Route>
+      </Routes>
+      <Footer></Footer>
+    </Router> */}
+    {/* <div className='container-doctor'>
+    <SidebarDoctor></SidebarDoctor>
+    <HeaderDoctor></HeaderDoctor>
+    </div> */}
+    <InformationPatient></InformationPatient>
+    
+    </>
   );
 }
-
 export default App;
